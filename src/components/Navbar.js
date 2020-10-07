@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme=>({
     menuSliderContainer: {
         width: 250,
         background: "#5c6d91",
-        height: "30rem"
+        height: "100%"
     },
     squintMark: {
         display: "block",
@@ -82,7 +82,7 @@ const Navbar = () => {
     const classes = useStyles();
 
     const sideList = slider => (
-        <Box className={classes.menuSliderContainer} component="div">
+        <Box className={classes.menuSliderContainer} component="div" onClick={toggleSlider(slider, false)}>
             <Avatar className={classes.squintMark} src={SquintMark} alt="SquintDev" />
             <Divider />
             <List>
@@ -110,7 +110,7 @@ const Navbar = () => {
                         <Typography variant="h5">
                             SquintDev
                         </Typography>
-                        <MobileSlideMenu open={state.right} anchor="right">
+                        <MobileSlideMenu open={state.right} anchor="right" onClose={toggleSlider("right", false)}>
                             {sideList("right")}
                         </MobileSlideMenu>
                     </Toolbar>
