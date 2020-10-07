@@ -1,9 +1,14 @@
 import React from 'react';
 import Home from './components/';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core';
 
 const App = () => {
     return (
-        <Home/>
+        <>
+            <CssBaseline />
+            <Home/>
+        </>
     );
 }
 
