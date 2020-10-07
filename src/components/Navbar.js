@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import MobileSlideMenu from '@material-ui/core/Drawer';
 import {
     AppBar,
     Toolbar,
@@ -38,6 +39,12 @@ const useStyles = makeStyles(theme=>({
         width: theme.spacing(8),
         height: theme.spacing(13),
         padding: "0.5rem"
+    },
+    whiteText: {
+        color: "rgb(255,255,255,0.67)"
+    },
+    redText: {
+        color: "#da4646"
     }
 }));
 
@@ -52,7 +59,7 @@ const menuItems = [
     },
     {
         listIcon: <AssignmentInd/>,
-        listText: "Resume"
+        listText: "Who Am I?"
     },
     {
         listIcon: <Apps/>,
@@ -65,34 +72,47 @@ const menuItems = [
 ];
 
 const Navbar = () => {
-    const classes = useStyles()
+    const [state, setState] = useState({
+        right: false
+    });
+    
+    const toggleSlider = (slider, open) => () => {
+        setState({...state, [slider]: open })
+    }
+    const classes = useStyles();
+
+    const sideList = slider => (
+        <Box className={classes.menuSliderContainer} component="div">
+            <Avatar className={classes.squintMark} src={SquintMark} alt="SquintDev" />
+            <Divider />
+            <List>
+                {menuItems.map((lsItem, key) => (
+                    <ListItem button key={key}>
+                        <ListItemIcon className={classes.whiteText}>
+                            {lsItem.listIcon}
+                        </ListItemIcon>
+                        <ListItemText className={classes.whiteText} primary={lsItem.listText} />
+                    </ListItem>
+                ))}
+            </List>
+        </Box>
+    );
+
     return (
         <>
-            <Box className={classes.menuSliderContainer} component="div">
-                <Avatar className={classes.squintMark} src={SquintMark} alt="SquintDev" />
-                <Divider />
-                <List>
-                    {menuItems.map((lsItem, key) => (
-                        <ListItem button key={key}>
-                            <ListItemIcon>
-                                {lsItem.listIcon}
-                            </ListItemIcon>
-                            <ListItemText>
-                                {lsItem.listText}
-                            </ListItemText>
-                        </ListItem>
-                    ))}
-                </List>
-            </Box>
+
             <Box component="nav">
                 <AppBar position="static" style={{background: "#304263"}}>
                     <Toolbar>
-                        <IconButton>
+                        <IconButton onClick={toggleSlider("right", true)}>
                             <Menu style={{color: "#da4646"}}/>
                         </IconButton>
                         <Typography variant="h5">
                             SquintDev
                         </Typography>
+                        <MobileSlideMenu open={state.right} anchor="right">
+                            {sideList("right")}
+                        </MobileSlideMenu>
                     </Toolbar>
                 </AppBar>
             </Box>
