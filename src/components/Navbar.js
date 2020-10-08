@@ -16,7 +16,6 @@ import {
 } from "@material-ui/core";
 
 import {
-    ArrowBack,
     Menu,
     AssignmentInd,
     Home,
@@ -100,7 +99,6 @@ const Navbar = () => {
 
     return (
         <>
-
             <Box component="nav">
                 <AppBar position="static" style={{background: "#304263"}}>
                     <Toolbar>
