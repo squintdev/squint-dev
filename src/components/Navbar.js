@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MobileSlideMenu from '@material-ui/core/Drawer';
 import {
@@ -50,23 +51,28 @@ const useStyles = makeStyles(theme=>({
 const menuItems = [
     {
         listIcon: <Home/>,
-        listText: "Home"
+        listText: "Home",
+        listURL: "/"
     },
     {
         listIcon: <Book/>,
-        listText: "Blog"
+        listText: "Blog",
+        listURL: "#"
     },
     {
         listIcon: <AssignmentInd/>,
-        listText: "Who Am I?"
+        listText: "Who Am I?",
+        listURL: "/whoami"
     },
     {
         listIcon: <Apps/>,
-        listText: "Projects"
+        listText: "Projects",
+        listURL: "#"
     },
     {
         listIcon: <ContactMail/>,
-        listText: "Contact"
+        listText: "Contact",
+        listURL: "#"
     }
 ];
 
@@ -86,7 +92,7 @@ const Navbar = () => {
             <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
-                    <ListItem button key={key}>
+                    <ListItem button key={key} component={Link} to={lsItem.listURL}>
                         <ListItemIcon className={classes.whiteText}>
                             {lsItem.listIcon}
                         </ListItemIcon>
