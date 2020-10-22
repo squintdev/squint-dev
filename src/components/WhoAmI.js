@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const useStyles = makeStyles(theme=>({
     mainContainer: {
-        background: "#233"
+        background: "#011c39"
     },
     timeLine: {
         position: "relative",
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme=>({
             content: "''",
             position: "absolute",
             height: "100%",
-            border: "1px solid tan",
+            border: "1px solid #5c6d91",
             right: "40px",
             top: 0
         },
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme=>({
     },
     timeLineItem: {
         padding: "1rem",
-        borderBottom: "2px solid tan",
+        borderBottom: "2px solid #5c6d91",
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme=>({
             right: "-0.625rem",
             top: "calc(50% - 5px)",
             borderStyle: "solid",
-            borderColor: "tomato tomato transparent transparent",
+            borderColor: "#da4646 #da4646 transparent transparent",
             borderWidth: "0.625rem",
             transform: "rotate(45deg)"
         },
@@ -58,12 +58,12 @@ const useStyles = makeStyles(theme=>({
             "&:nth-of-type(2n)": {
                 float: "right",
                 margin: "1rem",
-                borderColor: "tan"
+                borderColor: "#5c6d91"
             },
             "&:nth-of-type(2n):before": {
                 right: "auto",
                 left: "-0.625rem",
-                borderColor: "transparent transparent tomato tomato"
+                borderColor: "transparent transparent #da4646 #da4646"
             }
         }
     },
@@ -72,7 +72,7 @@ const useStyles = makeStyles(theme=>({
         maxWidth: "9.375rem",
         margin: "0 3rem 0 auto",
         fontSize: "1.8rem",
-        background: "tomato",
+        background: "#da4646",
         lineHeight: 1,
         padding: "0.5rem 0 1rem",
         "&:before": {
@@ -91,7 +91,7 @@ const useStyles = makeStyles(theme=>({
         }
     },
     heading: {
-        color: "tomato",
+        color: "#da4646",
         padding: "3rem 0",
         textTransform: "uppercase"
     },
@@ -112,29 +112,94 @@ const WhoAmI = () => {
                     Who Am I?
                 </Typography>
                 <Box component="div" className={classes.timeLine}>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>Year</Typography>
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2005</Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Item Heading
+                            Founder/CEO
                         </Typography>
-                        <Typography variant="body1" align="center" style={{color: "tomato"}}>
-                            Company Name
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            TechRemedy
                         </Typography>
-                        <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-                            description text lorem ipsum stuffy stuff lorem ipsum stuffystuff
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            On-site technical support, cybersecurity, web development, web hosting
                         </Typography>
                     </Box>
 
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>Year2</Typography>
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2011</Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Item Heading 2
+                            Web Developer
                         </Typography>
-                        <Typography variant="body1" align="center" style={{color: "tomato"}}>
-                            Company Name 2
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            OHL/Geodis
                         </Typography>
-                        <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-                            description text lorem ipsum stuffy stuff lorem ipsum stuffystuff
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Wrote web applications to monitor and manage large logistics operations for clients including Starbucks, Red Bull, Nutrisystem, and Walmart.
+                        </Typography>
+                    </Box>
+
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2014</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Creative Technologist
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            The Glenn Group/Wide Awake
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Digital marketing, web development, creative direction for technology.
+                        </Typography>
+                    </Box>
+
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2015</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            President
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            StreamWorks
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Built a brand manufacturing fly fishing tools and accessories. Digital/social marketing, web development, e-commerce.
+                        </Typography>
+                    </Box>
+
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2016</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Marketing Director
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            ReadyMax
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Safety products manufacturer. Focused on digital marketing and tradeshow marketing.
+                        </Typography>
+                    </Box>
+
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2018</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Digital Director
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            Foundry
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Ran the digital marketing and web team at a large creative agency. Focus on web development, SEO, Social Media, SEM, Email Marketing, and Team/Project Management.
+                        </Typography>
+                    </Box>
+
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2019</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Digital Director
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            SAF Holdings and Subsidiaries
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Web development, financial data analysis, and digital marketing for a loan originator in the Home Improvement industry.
                         </Typography>
                     </Box>
                 </Box>
