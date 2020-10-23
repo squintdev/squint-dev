@@ -57,7 +57,7 @@ const menuItems = [
     {
         listIcon: <Book/>,
         listText: "Blog",
-        listURL: "#"
+        listURL: "/blog"
     },
     {
         listIcon: <AssignmentInd/>,
