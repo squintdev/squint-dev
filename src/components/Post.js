@@ -55,8 +55,9 @@ const Post = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://squintghost.herokuapp.com/ghost/api/v2/content/posts/slug/${slug}?key=524e060a1d8a8b1df204be3fcf`);
+                const response = await axios.get(`https://squintghost.herokuapp.com/ghost/api/v2/content/posts/slug/${slug}?key=524e060a1d8a8b1df204be3fcf&include=tags`);
                 setData(response.data);
+                console.log(response.data);
             }
             catch(error) {
                 console.log(error);
@@ -78,7 +79,9 @@ const Post = () => {
                                 {data.posts[0].title}
                             </Typography>
                             <Typography variant="body1" className={classes.meta}>
-                                <span className={classes.postDate}>{Moment(data.posts[0].published_at).format('MM-DD-YYYY')}</span> | squintdev, blogging, social media
+                                <span className={classes.postDate}>{Moment(data.posts[0].published_at).format('MM-DD-YYYY')}</span> | {data.posts[0].tags.map(tag => (
+                                    <Link key={tag.id} className={classes.links} to={`/blog/tags/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                ))}
                             </Typography>
                             <Box component="div">
                                 <img src={data.posts[0].feature_image} alt={data.posts[0].title} className={classes.featuredImage}/>

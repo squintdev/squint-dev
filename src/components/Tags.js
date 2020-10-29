@@ -53,7 +53,7 @@ const useStyles = makeStyles(theme=>({
     }
 }));
 
-const Blog = () => {
+const Tags = () => {
 
     const [data, setData] = useState({posts: []});
     useEffect(() => {
@@ -101,4 +101,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default Tags;
