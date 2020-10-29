@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Typography, Box} from '@material-ui/core';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Moment from 'moment';
 
@@ -53,13 +53,14 @@ const useStyles = makeStyles(theme=>({
     }
 }));
 
-const Blog = () => {
+const Tag = () => {
+    let { slug } = useParams();
 
     const [data, setData] = useState({posts: []});
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://squintghost.herokuapp.com/ghost/api/v2/content/posts/?key=524e060a1d8a8b1df204be3fcf&include=tags');
+                const response = await axios.get(`https://squintghost.herokuapp.com/ghost/api/v2/content/posts?filter=tags%3A%5B${slug}%5D&key=524e060a1d8a8b1df204be3fcf&include=tags`);
                 setData(response.data);
                 console.log(response.data);
             }
@@ -68,7 +69,7 @@ const Blog = () => {
             }
         }
         fetchData();
-    }, []);
+    }, [slug]);
 
     const classes = useStyles();
     
@@ -101,4 +102,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default Tag;
