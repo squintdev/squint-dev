@@ -1,34 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Typography, Box} from '@material-ui/core';
+import {Typography, Box, Button} from '@material-ui/core';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Moment from 'moment';
 
 const useStyles = makeStyles(theme=>({
-    html: {
-        height: "100%"
-    },
-    body: {
-        height: "100%"
-    },
     mainContainer: {
         background: "#011c39",
-        padding: "3rem",
-        height: "100%"
+        padding: ".5rem",
     },
     article: {
-        display: "flex",
-        alignItems: "top",
-        marginBottom: "2rem"
+        width: "75%",
+        margin: "auto",
+        marginTop: ".5rem"
     },
-    blogImageSquare: {
-        height: "150px",
-        width: "auto"
+    featuredImage: {
+        width: "100%",
+        marginTop: ".5rem"
     },
     articleWrapper: {
-        paddingLeft: "2rem"
+        
     },
     multiBlogTitle: {
         color: "#da4646",
@@ -48,18 +41,21 @@ const useStyles = makeStyles(theme=>({
         color: "white",
         fontWeight: "bold"
     },
-    excerpt: {
-        color: "white"
+    postBody: {
+        color: "white",
+        marginTop: "1rem",
+        fontSize: "1.5rem"
     }
 }));
 
-const Blog = () => {
+const Post = () => {
+    let { slug } = useParams();
 
     const [data, setData] = useState({posts: []});
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://squintghost.herokuapp.com/ghost/api/v2/content/posts/?key=524e060a1d8a8b1df204be3fcf');
+                const response = await axios.get(`https://squintghost.herokuapp.com/ghost/api/v2/content/posts/slug/${slug}?key=524e060a1d8a8b1df204be3fcf`);
                 setData(response.data);
             }
             catch(error) {
@@ -67,7 +63,7 @@ const Blog = () => {
             }
         }
         fetchData();
-    }, []);
+    }, [slug]);
 
     const classes = useStyles();
     
@@ -75,27 +71,26 @@ const Blog = () => {
         <>
             <Navbar />
             <Box component="div" className={classes.mainContainer}>
-                {data.posts.map(post => (
-                    <Box key={post.id} component="div" className={classes.article}>
-                        <Box component="div" className={classes.blogImageSquare}>
-                            <img style={{width:"200px"}} src={post.feature_image} alt={post.title} />
-                        </Box>
+                {data.posts[0] && (
+                    <Box key={data.posts[0].id} component="div" className={classes.article}>
                         <Box component="div" className={classes.articleWrapper}>
                             <Typography variant="h4" className={classes.multiBlogTitle}>
-                                <Link className={classes.links} to={`/blog/${post.slug}`}>{post.title}</Link>
+                                {data.posts[0].title}
                             </Typography>
                             <Typography variant="body1" className={classes.meta}>
-                                <span className={classes.postDate}>{Moment(post.published_at).format('MM-DD-YYYY')}</span> | squintdev, blogging, social media
+                                <span className={classes.postDate}>{Moment(data.posts[0].published_at).format('MM-DD-YYYY')}</span> | squintdev, blogging, social media
                             </Typography>
-                            <Typography variant="body2" className={classes.excerpt}>
-                                {post.excerpt} [<Link className={classes.links} to={`/blog/${post.slug}`}>read more</Link>]
-                            </Typography>
+                            <Box component="div">
+                                <img src={data.posts[0].feature_image} alt={data.posts[0].title} className={classes.featuredImage}/>
+                            </Box>
+                            <div className={classes.postBody} dangerouslySetInnerHTML={{ __html: data.posts[0].html }} />
                         </Box>
+                        <Button variant="contained" color="primary" component={Link} to="/blog">Back To Posts</Button>
                     </Box>
-                ))}
+                )}
             </Box>
         </>
     );
 };
 
-export default Blog;
+export default Post;
