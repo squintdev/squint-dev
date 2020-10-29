@@ -5,6 +5,7 @@ import Home from './components/';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Blog from './components/Blog';
+import Post from './components/Post';
 import WhoAmI from './components/WhoAmI';
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
         <>
             <CssBaseline />
             <Route exact path="/" component={Home} />
-            <Route path="/blog" component={Blog} />
+            <Route exact path="/blog" component={Blog} />
+            <Route path="/blog/:slug" component={Post} />
             <Route path="/whoami" component={WhoAmI} />
         </>
     );
