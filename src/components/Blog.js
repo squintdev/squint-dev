@@ -7,28 +7,39 @@ import axios from 'axios';
 import Moment from 'moment';
 
 const useStyles = makeStyles(theme=>({
-    html: {
-        height: "100%"
-    },
-    body: {
-        height: "100%"
-    },
     mainContainer: {
         background: "#011c39",
         padding: "3rem",
-        height: "100%"
+        [theme.breakpoints.down("sm")]:{
+            paddingTop: "1rem",
+            paddingLeft: "0px"
+        }
     },
     article: {
         display: "flex",
         alignItems: "top",
-        marginBottom: "2rem"
+        marginBottom: "2rem",
+        [theme.breakpoints.down("sm")]:{
+            display: "block",
+            alignItems: "center",
+            width: "100%",
+            marginLeft: "-.5rem"
+        }
     },
     blogImageSquare: {
-        height: "150px",
-        width: "auto"
+        width: "200px",
+        height: "auto",
+        [theme.breakpoints.down("sm")]:{
+            width: "100%",
+            height: "auto",
+            marginLeft: "2rem"
+        }
     },
     articleWrapper: {
-        paddingLeft: "2rem"
+        paddingLeft: "2rem",
+        [theme.breakpoints.down("sm")]: {
+            paddingLeft: "none"
+        }
     },
     multiBlogTitle: {
         color: "#da4646",
@@ -78,8 +89,8 @@ const Blog = () => {
             <Box component="div" className={classes.mainContainer}>
                 {data.posts.map(({feature_image, title, slug, published_at, excerpt, tags}, i) => (
                     <Box key={i} component="div" className={classes.article}>
-                        <Box component="div" className={classes.blogImageSquare}>
-                            <img style={{width:"200px"}} src={feature_image} alt={title} />
+                        <Box component="div">
+                            <img src={feature_image} alt={title} className={classes.blogImageSquare}/>
                         </Box>
                         <Box component="div" className={classes.articleWrapper}>
                             <Typography variant="h4" className={classes.multiBlogTitle}>
