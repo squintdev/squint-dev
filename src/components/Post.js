@@ -80,7 +80,7 @@ const Post = () => {
                             </Typography>
                             <Typography variant="body1" className={classes.meta}>
                                 <span className={classes.postDate}>{Moment(data.posts[0].published_at).format('MM-DD-YYYY')}</span> | {data.posts[0].tags.map(tag => (
-                                    <Link key={tag.id} className={classes.links} to={`/blog/tags/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    <Link key={tag.id} className={classes.links} to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
                                 ))}
                             </Typography>
                             <Box component="div">

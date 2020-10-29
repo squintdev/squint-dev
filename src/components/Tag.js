@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Typography, Box} from '@material-ui/core';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Moment from 'moment';
 
@@ -53,13 +53,14 @@ const useStyles = makeStyles(theme=>({
     }
 }));
 
-const Tags = () => {
+const Tag = () => {
+    let { slug } = useParams();
 
     const [data, setData] = useState({posts: []});
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://squintghost.herokuapp.com/ghost/api/v2/content/posts/?key=524e060a1d8a8b1df204be3fcf&include=tags,authors');
+                const response = await axios.get(`https://squintghost.herokuapp.com/ghost/api/v2/content/posts?filter=tags%3A%5B${slug}%5D&key=524e060a1d8a8b1df204be3fcf&include=tags`);
                 setData(response.data);
                 console.log(response.data);
             }
@@ -68,7 +69,7 @@ const Tags = () => {
             }
         }
         fetchData();
-    }, []);
+    }, [slug]);
 
     const classes = useStyles();
     
@@ -87,7 +88,7 @@ const Tags = () => {
                             </Typography>
                             <Typography variant="body1" className={classes.meta}>
                                 <span className={classes.postDate}>{Moment(published_at).format('MM-DD-YYYY')} </span> {tags.map((tag, j) => 
-                                    <Link key={j} className={classes.links} to={`/blog/tags/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    <Link key={j} className={classes.links} to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
                                 )}
                             </Typography>
                             <Typography variant="body2" className={classes.excerpt}>
@@ -101,4 +102,4 @@ const Tags = () => {
     );
 };
 
-export default Tags;
+export default Tag;

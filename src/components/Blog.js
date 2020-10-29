@@ -59,7 +59,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://squintghost.herokuapp.com/ghost/api/v2/content/posts/?key=524e060a1d8a8b1df204be3fcf&include=tags,authors');
+                const response = await axios.get('https://squintghost.herokuapp.com/ghost/api/v2/content/posts/?key=524e060a1d8a8b1df204be3fcf&include=tags');
                 setData(response.data);
                 console.log(response.data);
             }
@@ -87,7 +87,7 @@ const Blog = () => {
                             </Typography>
                             <Typography variant="body1" className={classes.meta}>
                                 <span className={classes.postDate}>{Moment(published_at).format('MM-DD-YYYY')} </span> {tags.map((tag, j) => 
-                                    <Link key={j} className={classes.links} to={`/blog/tags/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    <Link key={j} className={classes.links} to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
                                 )}
                             </Typography>
                             <Typography variant="body2" className={classes.excerpt}>
