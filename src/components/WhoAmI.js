@@ -34,7 +34,6 @@ const useStyles = makeStyles(theme=>({
     },
     timeLineItem: {
         padding: "1rem",
-        borderBottom: "2px solid #5c6d91",
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
@@ -74,7 +73,7 @@ const useStyles = makeStyles(theme=>({
         fontSize: "1.8rem",
         background: "#da4646",
         lineHeight: 1,
-        padding: "0.5rem 0 1rem",
+        padding: "1rem 0 1rem",
         "&:before": {
             display: "none"
         },
