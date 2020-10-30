@@ -7,9 +7,10 @@ import SquintMark from "../images/head-only.svg";
 // temporary CSS styles
 const useStyles = makeStyles(theme=>({
     SquintMark: {
-        width: theme.spacing(8),
-        height: theme.spacing(13),
-        margin: theme.spacing(1)
+        width: theme.spacing(12),
+        height: theme.spacing(18.875),
+        margin: theme.spacing(2),
+        padding: ".75rem"
     },
     title: {
         color: "#da4646"
@@ -41,7 +42,7 @@ const Header = () => {
                 <Typed strings={["SquintDev"]} typeSpeed={70} />
             </Typography>
             <Typography className={classes.subtitle} variant="h5">
-                <Typed strings={["Technologist", "AI Enthusiast", "Fly Fisherman", "Insomniac"]} typeSpeed={70} backSpeed={80} loop />
+                <Typed strings={["Technologist", "Software Developer", "AI Enthusiast", "Musician", "Fly Fisherman", "Woodworker", "Insomniac"]} typeSpeed={70} backSpeed={80} loop />
             </Typography>
         </Box>
     );

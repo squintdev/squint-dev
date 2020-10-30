@@ -14,7 +14,11 @@ const useStyles = makeStyles(theme=>({
     article: {
         width: "75%",
         margin: "auto",
-        marginTop: ".5rem"
+        marginTop: ".5rem",
+        [theme.breakpoints.down("sm")]: {
+            width: "100%",
+            padding: ".5rem"
+        }
     },
     featuredImage: {
         width: "100%",
@@ -44,7 +48,11 @@ const useStyles = makeStyles(theme=>({
     postBody: {
         color: "white",
         marginTop: "1rem",
-        fontSize: "1.5rem"
+        fontSize: "1rem"
+    },
+    backButton: {
+        marginTop: "1rem",
+        marginBottom: "2rem"
     }
 }));
 
@@ -88,7 +96,7 @@ const Post = () => {
                             </Box>
                             <div className={classes.postBody} dangerouslySetInnerHTML={{ __html: data.posts[0].html }} />
                         </Box>
-                        <Button variant="contained" color="primary" component={Link} to="/blog">Back To Posts</Button>
+                        <Button variant="contained" color="primary" className={classes.backButton} component={Link} to="/blog">Back To Posts</Button>
                     </Box>
                 )}
             </Box>

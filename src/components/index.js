@@ -33,7 +33,7 @@ const Home = () => {
                             type: "circle",
                             stroke: {
                                 width: 1,
-                                color: "#d84444"
+                                color: "#011c39"
                             }
                         },
                         size: {
@@ -47,7 +47,7 @@ const Home = () => {
                             }
                         },
                         opacity: {
-                            value: .4,
+                            value: .5,
                             random: true,
                             anim: {
                                 enable: true,
