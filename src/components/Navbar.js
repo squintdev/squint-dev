@@ -36,9 +36,9 @@ const useStyles = makeStyles(theme=>({
     squintMark: {
         display: "block",
         margin: "0.5rem auto",
-        width: theme.spacing(8),
-        height: theme.spacing(13),
-        padding: "0.5rem"
+        width: theme.spacing(10),
+        height: theme.spacing(15.75),
+        padding: "0.75rem"
     },
     whiteText: {
         color: "rgb(255,255,255,0.67)"
@@ -108,14 +108,14 @@ const Navbar = () => {
             <Box component="nav">
                 <AppBar position="static" style={{background: "#304263"}}>
                     <Toolbar>
-                        <IconButton onClick={toggleSlider("right", true)}>
+                        <IconButton onClick={toggleSlider("left", true)}>
                             <Menu style={{color: "#da4646"}}/>
                         </IconButton>
                         <Typography variant="h5">
                             SquintDev
                         </Typography>
-                        <MobileSlideMenu open={state.right} anchor="right" onClose={toggleSlider("right", false)}>
-                            {sideList("right")}
+                        <MobileSlideMenu open={state.left} anchor="left" onClose={toggleSlider("left", false)}>
+                            {sideList("left")}
                         </MobileSlideMenu>
                     </Toolbar>
                 </AppBar>

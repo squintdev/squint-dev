@@ -14,7 +14,11 @@ const useStyles = makeStyles(theme=>({
     article: {
         width: "75%",
         margin: "auto",
-        marginTop: ".5rem"
+        marginTop: ".5rem",
+        [theme.breakpoints.down("sm")]: {
+            width: "100%",
+            padding: ".5rem"
+        }
     },
     featuredImage: {
         width: "100%",
@@ -44,7 +48,7 @@ const useStyles = makeStyles(theme=>({
     postBody: {
         color: "white",
         marginTop: "1rem",
-        fontSize: "1.5rem"
+        fontSize: "1rem"
     }
 }));
 
