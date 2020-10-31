@@ -67,12 +67,12 @@ const menuItems = [
     {
         listIcon: <Apps/>,
         listText: "Projects",
-        listURL: "#"
+        listURL: "/projects"
     },
     {
         listIcon: <ContactMail/>,
         listText: "Contact",
-        listURL: "#"
+        listURL: "/contact"
     }
 ];
 
