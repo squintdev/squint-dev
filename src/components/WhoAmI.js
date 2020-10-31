@@ -7,6 +7,12 @@ const useStyles = makeStyles(theme=>({
     mainContainer: {
         background: "#011c39"
     },
+    intro: {
+        width: "80%",
+        margin: "auto",
+        marginBottom: "3rem",
+        color: "white"
+    },
     timeLine: {
         position: "relative",
         padding: "1rem",
@@ -110,6 +116,11 @@ const WhoAmI = () => {
                 <Typography variant="h4" align="center" className={classes.heading}>
                     Who Am I?
                 </Typography>
+                <Box component="div" className={classes.intro}>
+                    <Typography variant="body1" align="center" className={classes.introP}>
+                        My name is Tom Duffy. You can call me Squint. I live in Reno, Nevada. The most important things in my life are my amazing wife, my 3 crazy kids, and my smelly dog, Tippet. Most of my software development history is in PHP and Laravel, but I'm starting to shift towards Javascript.
+                    </Typography>
+                </Box>
                 <Box component="div" className={classes.timeLine}>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2005</Typography>
                     <Box component="div" className={classes.timeLineItem}>
