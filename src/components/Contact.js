@@ -62,7 +62,7 @@ const Contact = () => {
                         <InputField required name="name" fullWidth={true} label="Name" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
                         <InputField required name="email" fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
                         <InputField required name="message" fullWidth={true} label="Message" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" multiline rows={4}/>
-                        <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>Send</Button>
+                        <Button type="submit" className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>Send</Button>
                     </form>
                 </Grid>
             </Box>
