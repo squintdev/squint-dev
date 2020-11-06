@@ -54,15 +54,16 @@ const Contact = () => {
             <Navbar />
             <Box component="div" className={classes.mainContainer}>
                 <Grid container justify="center">
-                    <Box component="form" className={classes.form} netlify>
+                    <form className={classes.form} method="post" action="/contact" name="contact">
                         <Typography variant="h5" className={classes.title}>
                             Contact me...
                         </Typography>
-                        <InputField fullWidth={true} label="Name" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
-                        <InputField fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
-                        <InputField fullWidth={true} label="Message" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" multiline rows={4}/>
+                        <input type="hidden" name="form-name" value="contact" />
+                        <InputField required name="name" fullWidth={true} label="Name" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
+                        <InputField required name="email" fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" />
+                        <InputField required name="message" fullWidth={true} label="Message" variant="outlined" inputProps={{style:{ color: "white" }}} margin="dense" size="medium" multiline rows={4}/>
                         <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>Send</Button>
-                    </Box>
+                    </form>
                 </Grid>
             </Box>
         </>
