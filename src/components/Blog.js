@@ -1,49 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Typography, Box} from '@material-ui/core';
+import {Typography, Box, Grid} from '@material-ui/core';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Moment from 'moment';
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(theme => ({
     mainContainer: {
         background: "#011c39",
-        padding: "3rem",
-        [theme.breakpoints.down("sm")]:{
-            paddingTop: "1rem",
-            paddingLeft: "0px"
-        }
+        flexGrow: 1,
+        padding: "2rem",
     },
-    article: {
-        display: "flex",
-        alignItems: "top",
-        marginBottom: "2rem",
-        [theme.breakpoints.down("sm")]:{
-            display: "block",
-            alignItems: "center",
-            width: "100%",
-            marginLeft: "-.5rem"
-        }
+    gridItem: {
+        padding: "1rem"
     },
     blogImageSquare: {
-        width: "200px",
-        height: "auto",
-        [theme.breakpoints.down("sm")]:{
-            width: "100%",
-            height: "auto",
-            marginLeft: "2rem"
-        }
-    },
-    articleWrapper: {
-        paddingLeft: "2rem",
-        [theme.breakpoints.down("sm")]: {
-            paddingLeft: "none"
-        }
+        float: "left",
+        width: "100%",
+        height: "300px",
+        objectFit: "cover",
+        marginBottom: "1rem"
     },
     multiBlogTitle: {
         color: "#da4646",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        fontSize: "1.75rem"
     },
     links: {
         color: "#da4646",
@@ -60,7 +42,8 @@ const useStyles = makeStyles(theme=>({
         fontWeight: "bold"
     },
     excerpt: {
-        color: "white"
+        color: "white",
+        textAlign: "justify"
     }
 }));
 
@@ -87,26 +70,30 @@ const Blog = () => {
         <>
             <Navbar />
             <Box component="div" className={classes.mainContainer}>
-                {data.posts.map(({feature_image, title, slug, published_at, excerpt, tags}, i) => (
-                    <Box key={i} component="div" className={classes.article}>
-                        <Box component="div">
-                            <img src={feature_image} alt={title} className={classes.blogImageSquare}/>
-                        </Box>
-                        <Box component="div" className={classes.articleWrapper}>
-                            <Typography variant="h4" className={classes.multiBlogTitle}>
-                                <Link className={classes.links} to={`/blog/${slug}`}>{title}</Link>
-                            </Typography>
-                            <Typography variant="body1" className={classes.meta}>
-                                <span className={classes.postDate}>{Moment(published_at).format('MM-DD-YYYY')} </span> {tags.map((tag, j) => 
-                                    <Link key={j} className={classes.links} to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
-                                )}
-                            </Typography>
-                            <Typography variant="body2" className={classes.excerpt}>
-                                {excerpt} [<Link className={classes.links} to={`/blog/${slug}`}>read more</Link>]
-                            </Typography>
-                        </Box>
-                    </Box>
-                ))}
+                <Grid container spacing={3} classNam={classes.gridItem}>
+                    {data.posts.map(({feature_image, title, slug, published_at, excerpt, tags}, i) => (
+                        <Grid item sm={12} md={6} lg={4} key={i}>
+                            <Box component="div">
+                                <img src={feature_image} alt={title} className={classes.blogImageSquare}/>
+                            </Box>
+                            <Box component="div">
+                                <Typography variant="h4" className={classes.multiBlogTitle}>
+                                    <Link className={classes.links} to={`/blog/${slug}`}>{title}</Link>
+                                </Typography>
+                                <Typography variant="body1" className={classes.meta}>
+                                    {tags.map((tag, j) => 
+                                        <Link key={j} className={classes.links} to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    )}
+                                    <br/>
+                                    <span className={classes.postDate}>{Moment(published_at).format('MM-DD-YYYY')} </span> 
+                                </Typography>
+                                <Typography variant="body2" className={classes.excerpt}>
+                                    {excerpt} [<Link className={classes.links} to={`/blog/${slug}`}>read more</Link>]
+                                </Typography>
+                            </Box>
+                        </Grid>
+                    ))}
+                </Grid>
             </Box>
         </>
     );
