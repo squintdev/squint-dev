@@ -118,7 +118,7 @@ const WhoAmI = () => {
                 </Typography>
                 <Box component="div" className={classes.intro}>
                     <Typography variant="body1" align="center" className={classes.introP}>
-                        My name is Tom Duffy. You can call me Squint. I live in Reno, Nevada. The most important things in my life are my amazing wife, my 3 crazy kids, and my smelly dog, Tippet. Most of my software development history is in PHP and Laravel, but I'm starting to shift towards Javascript.
+                        Hello! My name is Tom. I live in Reno, Nevada. The most important things in my life are my amazing wife, my 3 crazy kids, and my two smelly dogs, Tippet and Bijou. Most of my software development history is in PHP and Laravel, but I'm starting to shift towards Javascript with a focus on the MERN stack.
                     </Typography>
                 </Box>
                 <Box component="div" className={classes.timeLine}>
