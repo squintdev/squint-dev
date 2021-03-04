@@ -29,7 +29,8 @@ const useStyles = makeStyles(theme=>({
     },
     multiBlogTitle: {
         color: "#da4646",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        marginBottom: "2rem"
     },
     links: {
         color: "#da4646",
@@ -39,7 +40,8 @@ const useStyles = makeStyles(theme=>({
         }
     },
     meta: {
-        color: "#da4646"
+        color: "#da4646",
+        marginBottom: "1rem"
     },
     postDate: {
         color: "white",

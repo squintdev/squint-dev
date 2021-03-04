@@ -20,16 +20,18 @@ const useStyles = makeStyles(theme => ({
         width: "100%",
         height: "300px",
         objectFit: "cover",
-        marginBottom: "1rem"
+        marginBottom: "2rem"
     },
     multiBlogTitle: {
         color: "#da4646",
         textTransform: "uppercase",
-        fontSize: "1.75rem"
+        fontSize: "1.75rem",
+        marginBottom: "1rem"
     },
     links: {
         color: "#da4646",
         textDecoration: "none",
+        padding: "1rem",
         "&:hover": {
             color: "#a2011e"
         }
@@ -39,7 +41,8 @@ const useStyles = makeStyles(theme => ({
     },
     postDate: {
         color: "white",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginTop: "1rem"
     },
     excerpt: {
         color: "white",
