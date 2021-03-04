@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
         padding: "2rem",
     },
     gridItem: {
-        padding: "1rem"
+        padding: "2rem"
     },
     blogImageSquare: {
         float: "left",
@@ -25,13 +25,12 @@ const useStyles = makeStyles(theme => ({
     multiBlogTitle: {
         color: "#da4646",
         textTransform: "uppercase",
-        fontSize: "1.75rem",
+        fontSize: "1.55rem",
         marginBottom: "1rem"
     },
     links: {
         color: "#da4646",
         textDecoration: "none",
-        padding: "1rem",
         "&:hover": {
             color: "#a2011e"
         }
