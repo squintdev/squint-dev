@@ -118,7 +118,7 @@ const WhoAmI = () => {
                 </Typography>
                 <Box component="div" className={classes.intro}>
                     <Typography variant="body1" align="center" className={classes.introP}>
-                        Hello! My name is Tom. I live in Reno, Nevada. The most important things in my life are my amazing wife, my 3 crazy kids, and my two smelly dogs, Tippet and Bijou. Most of my software development history is in PHP and Laravel, but I'm starting to shift towards Javascript with a focus on the MERN stack.
+                        Hello! My name is Tom. I live in Reno, Nevada. The most important things in my life are my amazing wife, my 3 crazy kids, and my two smelly dogs, Tippet and Bijou. Most of my software development history is in PHP and Laravel, but I'm starting to shift towards Javascript with a focus on the MERN stack. This site was built using React for the front end and NodeJS/Ghost for the backend.
                     </Typography>
                 </Box>
                 <Box component="div" className={classes.timeLine}>
