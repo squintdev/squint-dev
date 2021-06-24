@@ -21,7 +21,6 @@ import {
     AssignmentInd,
     Home,
     Book,
-    Apps,
     ContactMail
 } from "@material-ui/icons";
 import SquintMark from "../images/head-only.svg";
