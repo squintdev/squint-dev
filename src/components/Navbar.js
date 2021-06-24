@@ -64,11 +64,6 @@ const menuItems = [
         listText: "Who Am I?",
         listURL: "/whoami"
     },
-    // {
-    //     listIcon: <Apps/>,
-    //     listText: "Projects",
-    //     listURL: "/projects"
-    // },
     {
         listIcon: <ContactMail/>,
         listText: "Contact",
