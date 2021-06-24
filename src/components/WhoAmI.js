@@ -212,6 +212,18 @@ const WhoAmI = () => {
                             Web development, financial data analysis, and digital marketing for a loan originator in the Home Improvement industry.
                         </Typography>
                     </Box>
+                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2021</Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Director of Software
+                        </Typography>
+                        <Typography variant="body1" align="center" style={{color: "#da4646"}}>
+                            SAF Holdings and Subsidiaries
+                        </Typography>
+                        <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                            Software development, software management, and financial data analysis for a loan originator in the Home Improvement industry.
+                        </Typography>
+                    </Box>
                 </Box>
             </Box>
         </>

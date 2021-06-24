@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme=>({
         padding: ".75rem"
     },
     title: {
-        color: "#da4646"
+        color: "#da4646",
+        fontWeight: "bold",
     },
     subtitle: {
         color: "rgb(0,0,0,0.7)",
@@ -42,7 +43,7 @@ const Header = () => {
                 <Typed strings={["SquintDev"]} typeSpeed={70} />
             </Typography>
             <Typography className={classes.subtitle} variant="h5">
-                <Typed strings={["Technologist", "Software Developer", "AI Enthusiast", "Musician", "Fly Fisherman", "Woodworker", "Insomniac"]} typeSpeed={70} backSpeed={80} loop />
+                <Typed strings={["Technologist", "Software Developer", "AI Enthusiast", "NFT Creator", "Musician", "Fly Fisherman", "Woodworker", "Insomniac"]} typeSpeed={70} backSpeed={80} loop />
             </Typography>
         </Box>
     );
