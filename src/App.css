@@ -1,21 +1,4 @@
 html {
-    background-color: #5c6d91;
-}
-
-.kg-image-card {
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.kg-image-card img {
-    width: 100%;
-    padding: 0px;
-}
-
-figcaption {
-    font-size: .75rem;
-    text-align: center;
-    font-style: italic;
+    background-color: #06091a;
+    color: #bfd0e2;
 }
