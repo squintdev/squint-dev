@@ -25,24 +25,21 @@ const Post = () => {
     return (
         <>
             <Navbar />
-            <div className="mainContainer">
+            <div className="container w-full m-auto mt-4 p-4">
                 {data.posts[0] && (
                     <div key={data.posts[0].id} className="article">
                         <div className="articleWrapper">
-                            <h4 className="multiBlogTitle">
+                            <h4 className="text-3xl text-accent-default">
                                 {data.posts[0].title}
                             </h4>
                             <p className="meta">
                                 <span className="postDate">{Moment(data.posts[0].published_at).format('MM-DD-YYYY')}</span> | {data.posts[0].tags.map(tag => (
-                                    <Link key={tag.id} className="links" to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    <Link key={tag.id} className="hover:text-secondary-light" to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
                                 ))}
                             </p>
-                            <div>
-                                <img src={data.posts[0].feature_image} alt={data.posts[0].title} className="featuredImage" />
-                            </div>
-                            <div className="postBody" dangerouslySetInnerHTML={{ __html: data.posts[0].html }} />
+                            <div className="mt-4" dangerouslySetInnerHTML={{ __html: data.posts[0].html }} />
                         </div>
-                        <button className="backButton" component={Link} to="/blog">Back To Posts</button>
+                        <a className="hover:text-secondary-light" href="/blog">Back To Posts</a>
                     </div>
                 )}
             </div>

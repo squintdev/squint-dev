@@ -9,6 +9,7 @@ import Tag from './components/Tag';
 import WhoAmI from './components/WhoAmI';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import sdRgB from './components/sdRgB';
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/whoami" component={WhoAmI} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
+            <Route path="/sdRgB" component={sdRgB} />
         </>
     );
 }

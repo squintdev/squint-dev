@@ -25,27 +25,23 @@ const Tag = () => {
     return (
         <>
             <Navbar />
-            <div className="mainContainer">
-                {data.posts.map(({feature_image, title, slug, published_at, excerpt, tags}, i) => (
-                    <div key={i} className="article">
-                        <div>
-                            <img src={feature_image} alt={title} className="blogImageSquare" />
+            <div className="container w-full m-auto mt-4 p-4">
+                <div className="text-center w-1/4 m-auto">
+                    {data.posts.map(({title, slug, published_at, tags}, i) => (
+                        <div key={i} className="pb-6">
+                            <div className="mt-2">
+                                <h4 className="text-xl font-bold text-accent-default hover:text-secondary-light">
+                                    <Link className="hover:text-secondary-light" to={`/blog/${slug}`}>{title}</Link>
+                                </h4>
+                                <p className="meta">
+                                    <span className="postDate">{Moment(published_at).format('MM-DD-YYYY')} </span> {tags.map((tag, j) => 
+                                        <Link key={j} className="hover:text-secondary-light" to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
+                                    )}
+                                </p>
+                            </div>
                         </div>
-                        <div className="articleWrapper">
-                            <h4 className="multiBlogTitle">
-                                <Link className="links" to={`/blog/${slug}`}>{title}</Link>
-                            </h4>
-                            <p className="meta">
-                                <span className="postDate">{Moment(published_at).format('MM-DD-YYYY')} </span> {tags.map((tag, j) => 
-                                    <Link key={j} className="links" to={`/tag/${tag.slug}`}>{tag.name}&nbsp;|&nbsp;</Link>
-                                )}
-                            </p>
-                            <p className="excerpt">
-                                {excerpt} [<Link className="links" to={`/blog/${slug}`}>read more</Link>]
-                            </p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </>
     );
