@@ -12,11 +12,11 @@ import RetroPCHover from '../images/retro-pc-hover.gif';
 const Gallery = () => {
     return (
         <>
-            <div className="container w-3/4 m-auto">
+            <div className="container lg:w-3/4 m-auto">
                 <div className="mt-24">
-                    <img className="w-1/2 m-auto" src={GalleryTitle} alt="NFT Gallery" />
+                    <img className="lg:w-1/2 m-auto" src={GalleryTitle} alt="NFT Gallery" />
                 </div>
-                <div className="w-1/3 m-auto">
+                <div className="lg:w-1/3 m-auto">
                     <div className="mt-24 flex items-center">
                         <a className="h-6 w-auto m-auto" href="/ssw-curation">
                             <HoverImage className="h-6 w-auto m-auto" src={SSWtext} hoverSrc={SSWtextHover} alt="Screensaver curation" />
@@ -32,7 +32,7 @@ const Gallery = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="hidden lg:block">
                     <HoverImage className="w-1/4 float-right" src={RetroPC} hoverSrc={RetroPCHover} alt="retro pc" />
                 </div>
 
