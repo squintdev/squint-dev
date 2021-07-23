@@ -16,9 +16,9 @@ module.exports = {
       }
     },
     extend: {
-      backgroundImage: theme => ({
-        'home-card': "url('images/cmdexe.png')",
-      })
+      fontFamily: {
+        'press-start': ["'Press Start 2P'", 'cursive'],
+      },
     },
   },
   variants: {
