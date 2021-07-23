@@ -19,7 +19,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex items-center">
-                        <Link to="/sdRgB" className="hover:text-accent-default">@</Link>
+                        @
                     </div>
                 </nav>
             </header>

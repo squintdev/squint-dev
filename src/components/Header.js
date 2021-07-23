@@ -7,12 +7,8 @@ const terminals = [
     '["$:./find_tendies.js","██████████ 100%","tendies found.","$:./eat_tendies.js","tendies is null"]'
 ];
 
-console.log(terminals);
-
 let rando = Math.floor(Math.random() * terminals.length);
 var terminal = JSON.parse(terminals[rando]);
-
-console.log(rando);
 
 const Header = () => {
     return (
