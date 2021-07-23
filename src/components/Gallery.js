@@ -7,8 +7,6 @@ import SSWtext from '../images/screensaver-curation.png';
 import SOOLtext from '../images/sool-gallery.png';
 import RGBtext from '../images/rgb-gallery.png';
 import SSWtextHover from '../images/screensaver-curation-hover.png';
-import SOOLtextHover from '../images/sool-gallery-hover.png';
-import RGBtextHover from '../images/rgb-gallery-hover.png';
 import RetroPCHover from '../images/retro-pc-hover.gif';
 
 const Gallery = () => {
