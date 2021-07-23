@@ -24,15 +24,13 @@ const Gallery = () => {
                             <HoverImage className="h-6 w-auto m-auto" src={SSWtext} hoverSrc={SSWtextHover} alt="Screensaver curation" />
                         </a>
                     </div>
-                    <div className="mt-6 flex items-center">
-                        <a className="h-6 w-auto m-auto" href="/sool-gallery">
-                            <HoverImage className="h-6 w-auto m-auto" src={SOOLtext} hoverSrc={SOOLtextHover} alt="SOOL Gallery" />
-                        </a>                
+                    <div className="mt-6 flex items-center justify-center">
+                        <img className="h-6 w-auto m-auto" src={SOOLtext} alt="SOOL Gallery" />
+                        <span className="font-press-start">[coming soon]</span>
                     </div>
                     <div className="mt-6 flex items-center">
-                        <a className="h-6 w-auto m-auto" href="/rgb-gallery">
-                            <HoverImage className="h-6 w-auto m-auto" src={RGBtext} hoverSrc={RGBtextHover} alt="RGB Gallery" />
-                        </a>   
+                        <img className="h-6 w-auto m-auto" src={RGBtext} alt="RGB Gallery" />
+                        <span className="font-press-start">[coming soon]</span>
                     </div>
                 </div>
 
