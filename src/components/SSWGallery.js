@@ -34,7 +34,7 @@ const SSWGallery = () => {
         <>
             <main className="p-2 lg:max-h-screen overflow-y-scroll snap snap-y snap-mandatory font-press-start text-secondary-light">
                 <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="w-full text-center text-md lg:w-1/2 m-auto text-4xl">
+                    <div className="w-full text-center lg:w-1/2 lg:m-auto">
                         <Typed strings={["This gallery showcases the collection of works that I have purchased and held from ScreenSaver.world. Just scroll down to navigate the gallery. Enjoy!"]} typeSpeed={25} startDelay={300} />
                         <h2 className="text-md relative top-12 lg:text-2xl"><a href="/gallery">Back to main menu</a></h2>
                     </div>
@@ -127,7 +127,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Believer} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Believer} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: IF YOU ARE A BELIEVER</h2>
@@ -141,7 +141,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Chaos} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Chaos} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Chaos by Vaca</h2>
@@ -155,7 +155,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Felirami} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Felirami} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: 你好他妈的混蛋</h2>
@@ -222,7 +222,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Mudos} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Mudos} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Mundos gélidos</h2>
@@ -236,7 +236,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Sightings} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Sightings} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Sightings</h2>
@@ -286,7 +286,7 @@ const SSWGallery = () => {
                 <section className="lg:flex items-center justify-center w-full h-screen snap-start">
                     <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-full lg:h-96 w-auto" src={Butter} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 lg:w-auto" src={Butter} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Trash Foods #7 - Butter</h2>
