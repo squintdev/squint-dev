@@ -1,3 +1,26 @@
+@layer base {
+    @font-face {
+      font-family: 'Press Start 2P';
+      font-weight: 400;
+      src: url(./fonts/PressStart2P-Regular.ttf) format("truetype");
+    }
+}
+
+@layer utilities {
+    .snap {
+      scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+    }
+    .snap-y {
+      --scroll-snap-direction: y;
+    }
+    .snap-mandatory {
+      --scroll-snap-constraint: mandatory;
+    }
+    .snap-start {
+      scroll-snap-align: start;
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
