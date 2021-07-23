@@ -32,17 +32,17 @@ import Watcher from '../images/ssw-curation/watcher.jpg';
 const SSWGallery = () => {
     return (
         <>
-            <main className="max-h-screen overflow-y-scroll snap snap-y snap-mandatory font-press-start text-secondary-light">
+            <main className="p-2 lg:max-h-screen overflow-y-scroll snap snap-y snap-mandatory font-press-start text-secondary-light">
                 <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="w-1/2 m-auto text-center text-lg lg:text-4xl">
+                    <div className="w-full text-center text-md lg:w-1/2 m-auto text-4xl">
                         <Typed strings={["This gallery showcases the collection of works that I have purchased and held from ScreenSaver.world. Just scroll down to navigate the gallery. Enjoy!"]} typeSpeed={25} startDelay={300} />
                         <h2 className="text-md relative top-12 lg:text-2xl"><a href="/gallery">Back to main menu</a></h2>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={Delta} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={Delta} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: ▲</h2>
@@ -53,10 +53,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="mt-24 lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={Watcher} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={Watcher} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Watcher at the end</h2>
@@ -67,10 +67,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="mt-24 lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={UntitledFlyer} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={UntitledFlyer} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Untitled 2, Flyer by Wrecks</h2>
@@ -82,10 +82,10 @@ const SSWGallery = () => {
                     </div>
                 </section>
 
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={MindsEyeFlyer} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={MindsEyeFlyer} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Mind's Eye Flyer 3: “Background”, Alternate design</h2>
@@ -96,10 +96,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="mt-24 lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={RainbowPunxxx} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={RainbowPunxxx} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: rainbow punxxx no. 17 (:))</h2>
@@ -110,10 +110,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="w-96" src={SeeingEyes} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:w-96" src={SeeingEyes} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: All Seeing Eyes #002</h2>
@@ -124,10 +124,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Believer} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Believer} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: IF YOU ARE A BELIEVER</h2>
@@ -138,10 +138,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Chaos} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Chaos} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Chaos by Vaca</h2>
@@ -152,10 +152,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Felirami} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Felirami} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: 你好他妈的混蛋</h2>
@@ -166,8 +166,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={Fire}
@@ -183,8 +183,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={GlitchDog}
@@ -201,8 +201,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={GummyWorm}
@@ -219,10 +219,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Mudos} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Mudos} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Mundos gélidos</h2>
@@ -233,10 +233,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Sightings} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Sightings} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Sightings</h2>
@@ -247,8 +247,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={Thor}
@@ -265,8 +265,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={TimesUp}
@@ -283,10 +283,10 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
-                            <img className="h-96" src={Butter} alt="Delta by X3r0ne" />
+                            <img className="w-full lg:h-96 w-auto" src={Butter} alt="Delta by X3r0ne" />
                         </div>
                         <div className="flex flex-col justify-center col-span-3 col-start-8">
                             <h2 className="font-black">Title: Trash Foods #7 - Butter</h2>
@@ -297,8 +297,8 @@ const SSWGallery = () => {
                         </div>
                     </div>
                 </section>
-                <section className="flex items-center justify-center w-full h-screen snap-start">
-                    <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+                <section className="lg:flex items-center justify-center w-full h-screen snap-start">
+                    <div className="lg:grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
                         <div className="col-span-5 col-start-2">
                             <ReactVideo 
                                 src={Undone}
