@@ -13,7 +13,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="flex items-center">
-                        <a className="hover:text-secondary-light" href="https://twitter.com/burb8873" target="_blank">@</a>
+                        <a className="hover:text-secondary-light" href="https://twitter.com/burb8873" target="_blank" rel="noreferrer">@</a>
                     </div>
                 </nav>
             </header>
