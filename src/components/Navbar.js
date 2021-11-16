@@ -1,20 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import SquintMark from "../images/head-only.svg";
 
 const Navbar = () => {
 
     return (
         <>
-            <header className="border-b border-accent-default">
+            <header className="border-b border-primary-light bg-primary-dark text-primary-light font-press-start">
                 <nav className="container mx-auto flex items-center justify-between px-4 py-6">
                     <div className="flex items-center">
                         <Link to="/">
-                            <img className="h-20 flex-none" src={SquintMark} alt="SquintDev" />
+                            squint.dev
                         </Link>
                     </div>
                     <div className="flex items-center">
-                        @
+                        <a className="hover:text-secondary-light" href="https://twitter.com/burb8873" target="_blank">@</a>
                     </div>
                 </nav>
             </header>
