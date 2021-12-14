@@ -24,7 +24,7 @@ const Header = () => {
 
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <Link to="/exoplanet-punks"><img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={exoplanet} alt="exoplanet punks" /></Link>
+                            <Link to="/exoplanet-punks"><img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={exoplanet} alt="exoplanet punks" /></Link>
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2"><Link to="/exoplanet-punks">Exoplanet Punks</Link></p>
@@ -33,34 +33,16 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={walrus} alt="" />
+                            <Link to="/sacred-walrus"><img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={walrus} alt="" /></Link>
                         </div>
                         <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Temple of the Sacred Walrus</p>
+                            <p className="text-xl text-white font-bold mb-2"><Link to="/sacred-walrus">Temple of the Sacred Walrus</Link></p>
                             <p className="text-base text-gray-400 font-normal">OBJKTCOM</p>
                         </div>
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={savers} alt="" />
-                        </div>
-                        <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Sanity Savers</p>
-                            <p className="text-base text-gray-400 font-normal">Screensaver</p>
-                        </div>
-                    </div>
-                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={sool} alt=""  />
-                        </div>
-                        <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Seasons of our Lives</p>
-                            <p className="text-base text-gray-400 font-normal">Screensaver</p>
-                        </div>
-                    </div>
-                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={then} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={then} alt=""  />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Then vs Now</p>
@@ -69,25 +51,16 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={rejected} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={sool} alt=""  />
                         </div>
                         <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Rejected Game Assets</p>
+                            <p className="text-xl text-white font-bold mb-2">Seasons of our Lives</p>
                             <p className="text-base text-gray-400 font-normal">Screensaver</p>
                         </div>
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={snitches} alt=""  />
-                        </div>
-                        <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Snitches Get Glitches</p>
-                            <p className="text-base text-gray-400 font-normal">OpenSea Polygon</p>
-                        </div>
-                    </div>
-                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={deathpunk} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={deathpunk} alt=""  />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">DEATH PUNK</p>
@@ -96,7 +69,34 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={glitchbanners} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={snitches} alt=""  />
+                        </div>
+                        <div className="text-center">
+                            <p className="text-xl text-white font-bold mb-2">Snitches Get Glitches</p>
+                            <p className="text-base text-gray-400 font-normal">OpenSea Polygon</p>
+                        </div>
+                    </div>
+                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                        <div className="mb-8">
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={rejected} alt=""  />
+                        </div>
+                        <div className="text-center">
+                            <p className="text-xl text-white font-bold mb-2">Rejected Game Assets</p>
+                            <p className="text-base text-gray-400 font-normal">Screensaver</p>
+                        </div>
+                    </div>
+                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                        <div className="mb-8">
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={savers} alt="" />
+                        </div>
+                        <div className="text-center">
+                            <p className="text-xl text-white font-bold mb-2">Sanity Savers</p>
+                            <p className="text-base text-gray-400 font-normal">Screensaver</p>
+                        </div>
+                    </div>
+                    <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                        <div className="mb-8">
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={glitchbanners} alt=""  />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Glitch Banners</p>
@@ -105,7 +105,7 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={conclusion} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={conclusion} alt=""  />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Impression of a Dying Conclusion</p>
@@ -114,7 +114,7 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36 lg:h-48 w-48" src={dosskull} alt=""  />
+                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={dosskull} alt=""  />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">DOS Skulls</p>
