@@ -20,7 +20,7 @@ const Header = () => {
 
         <div className="w-full bg-secondary-dark">
             <section className="mx-auto px-4 sm:px-6 lg:px-4 py-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 monotype">
 
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
@@ -64,6 +64,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">DEATH PUNK</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">OpenSea Ethereum</p>
                         </div>
                     </div>
@@ -73,6 +74,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Snitches Get Glitches</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">OpenSea Polygon</p>
                         </div>
                     </div>
@@ -82,6 +84,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Rejected Game Assets</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">Screensaver</p>
                         </div>
                     </div>
@@ -91,6 +94,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Sanity Savers</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">Screensaver</p>
                         </div>
                     </div>
@@ -100,6 +104,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Glitch Banners</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">OpenSea Ethereum</p>
                         </div>
                     </div>
@@ -109,6 +114,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Impression of a Dying Conclusion</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">OpenSea Polygon</p>
                         </div>
                     </div>
@@ -118,6 +124,7 @@ const Header = () => {
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">DOS Skulls</p>
+                            <span className="inline-block px-2 py-1 leading-none bg-secondary-dark text-primary-dark rounded-full font-semibold uppercase tracking-wide text-xs">Coming Soon</span>
                             <p className="text-base text-gray-400 font-normal">Hicetnunc</p>
                         </div>
                     </div>
