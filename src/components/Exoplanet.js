@@ -75,6 +75,7 @@ const Exoplanet = () => {
                                         </div>
                                         <div className="text-center">
                                             <p className="text-xl text-white font-bold mb-2"><a href={t.link} target="_blank" rel="noreferrer">#{t.id}</a></p>
+                                            <p className="text-xl text-white font-bold mb-2"><strong>Editions: </strong>1</p>
                                             <p className="text-base text-gray-400 font-normal"><strong>Platform: </strong>Screensaver</p>
                                         </div>
                                     </div>
