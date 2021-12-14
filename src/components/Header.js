@@ -42,16 +42,16 @@ const Header = () => {
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={then} alt=""  />
+                            <Link to="/then-vs-now"><img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={then} alt="" /></Link>
                         </div>
                         <div className="text-center">
-                            <p className="text-xl text-white font-bold mb-2">Then vs Now</p>
+                            <Link to="/then-vs-now"><p className="text-xl text-white font-bold mb-2">Then vs Now</p></Link>
                             <p className="text-base text-gray-400 font-normal">OpenSea Polygon</p>
                         </div>
                     </div>
                     <div className="w-full bg-secondary-light rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={sool} alt=""  />
+                            <Link to="/sool"><img className="object-center object-cover rounded-lg h-36 w-36 lg:h-48 w-48" src={sool} alt="" /></Link>
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-white font-bold mb-2">Seasons of our Lives</p>

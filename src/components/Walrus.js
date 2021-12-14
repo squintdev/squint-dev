@@ -34,7 +34,7 @@ const Walrus = () => {
                     </div>
                 </div>
 
-                <div className="description p-6">
+                <div className="description p-6 w-1/2 m-auto text-center">
                     Not much is known about the Temple of the Sacred Walrus. What we do know is that a metaversal archeological search uncovered artifacts that tells us it is a cult in the metaverse that worships shape, color, and their Walrus god...especially its tusks.
                 </div>
 

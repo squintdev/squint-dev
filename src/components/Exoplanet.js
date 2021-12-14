@@ -58,7 +58,7 @@ const Exoplanet = () => {
                     </div>
                 </div>
 
-                <div className="description p-6">
+                <div className="description p-6 w-1/2 m-auto text-center">
                     Exoplanet Punks is a collection of 100 unique pixel art aliens. The meta descriptions of each of the first 30 Exoplanet Punks also contain a short story.
                 </div>
 
