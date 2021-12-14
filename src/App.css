@@ -1,3 +1,27 @@
 html {
-    background-color: #222222;
+    background-color: #011627;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+}
+
+h4 {
+    font-family: 'Bangers', cursive;
+}
+
+.barcode {
+    font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+.monotype {
+    font-family: 'Space Mono', monospace;
 }
