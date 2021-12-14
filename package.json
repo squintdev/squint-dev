@@ -13,8 +13,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "reactjs-media": "^1.5.1"
+    "react-scripts": "4.0.0"
   },
   "scripts": {
     "start": "craco start",
