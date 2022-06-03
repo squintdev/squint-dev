@@ -40,7 +40,7 @@ const Cc0 = () => {
                     <p className="mb-4">Along with the video I wrote up a Twitter thread that read as follows:</p>
                     <p className="mb-4">I can't stand copyright. If you want to RCSA any of my work, feel free. Along those lines...I created this little video loop that I was going to mint, but now I want all of YOU to mint it. A thread 🧵</p>
                     <p className="mb-4">It started with a quick doodle in Photoshop. I created a border that I animated in PhotoMosh. I then composited the frame and doodle in After Effects. I then uploaded the doodle (png and psd) and video loop to IPFS which can be found here.</p>
-                    <p className="mb-4"><a href="https://gateway.pinata.cloud/ipfs/QmaC7CC6G69uNkP8svy8yotmGRL1EFuqACHKqRQFGyNv6o" target="_blank">IPFS Link to Files</a></p>
+                    <p className="mb-4"><a href="https://gateway.pinata.cloud/ipfs/QmaC7CC6G69uNkP8svy8yotmGRL1EFuqACHKqRQFGyNv6o" target="_blank" rel="noreferrer">IPFS Link to Files</a></p>
                     <p className="mb-4">I would love to see you right-click save any of these files you would like to use. You can then mint them as is or remix them. All 3 files are completely CC0. The only thing I request is that if you mint, you include "Project CC0" in the title. It's optional, but requested!</p>
                     <p className="mb-4">In closing, fuck copyright. I would love to see remixes from some of my favorite artists who I will tag here! @robnessofficial @maxcapacity @voidkross @x3r0ne @MisterReborn @blissofart @PurzBeats @CityShrug @TAYL0RWTF @thesenfts @letsglitchit @SHED_mdrn_lvng @bitpixi @bitttylabs</p>
                 </div>
