@@ -33,7 +33,7 @@ const ExoMint = () => {
                     <iframe 
                         title="wallet-frame"
                         src="https://gateway.ipfscdn.io/ipfs/QmQTQPfoJbAPYAbRqNLmm9gfLspXuXq5TVa8LgQEf6vktt/nft-drop.html?contract=0x6ED5b26A06CFBB097fd7bf0534643EC112060553&chainId=137"
-                        className="w-full m-auto h-3/4 max-w-screen border-none md:w-3/4 md:h-1/2"
+                        className="w-full m-auto h-screen max-w-screen border-none md:w-3/4"
                     ></iframe>
                 </div>
 
