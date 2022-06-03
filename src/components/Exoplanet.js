@@ -46,15 +46,15 @@ const Exoplanet = () => {
 
                 <div className="stats flex justify-between p-6">
                     <div className="left">
-                        <strong>Platform: </strong>Screensaver<br />
+                        <strong>Platform: </strong>Mixed<br />
                         <strong>Currency: </strong>MATIC<br />
                         <strong>Status: </strong>Ongoing
                     </div>
 
                     <div className="right text-right">
                         <strong>Total Supply: </strong>100<br />
-                        <strong>Current Supply: </strong>30<br />
-                        <strong>Next Drop: </strong>Jan 2022
+                        <strong>Current Supply: </strong>50<br />
+                        <strong>Next Drop: </strong>June 2022
                     </div>
                 </div>
 

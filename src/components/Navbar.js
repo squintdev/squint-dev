@@ -23,7 +23,7 @@ const Navbar = () => {
                                         <a className="text-secondary-dark hover:text-primary-dark" href="https://objkt.com/profile/tz1N9VQ5c1k5n6XPN23GhdWkDG53p12DcULd/created" target="_blank" rel="noreferrer">Objkt.com</a>
                                         <a className="text-secondary-dark hover:text-primary-dark" href="https://hicetnunc.art/SquintDev" target="_blank" rel="noreferrer">HEN</a>
                                         <a className="text-secondary-dark hover:text-primary-dark" href="https://ssw.wtf/squintdev" target="_blank" rel="noreferrer">Screensaver</a>
-                                        <a className="text-secondary-dark hover:text-primary-dark" href="https://twitter.com/burb8873" target="_blank" rel="noreferrer">@</a>
+                                        <a className="text-secondary-dark hover:text-primary-dark" href="https://twitter.com/squintdev" target="_blank" rel="noreferrer">@</a>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                                         <a className="text-secondary-dark hover:text-primary-dark block px-3 py-2 rounded-md text-base font-medium" href="https://objkt.com/profile/tz1N9VQ5c1k5n6XPN23GhdWkDG53p12DcULd/created" target="_blank" rel="noreferrer">Objkt.com</a>
                                         <a className="text-secondary-dark hover:text-primary-dark block px-3 py-2 rounded-md text-base font-medium" href="https://hicetnunc.art/SquintDev" target="_blank" rel="noreferrer">HEN</a>
                                         <a className="text-secondary-dark hover:text-primary-dark block px-3 py-2 rounded-md text-base font-medium" href="https://ssw.wtf/squintdev" target="_blank" rel="noreferrer">Screensaver</a>
-                                        <a className="text-secondary-dark hover:text-primary-dark block px-3 py-2 rounded-md text-base font-medium" href="https://twitter.com/burb8873" target="_blank" rel="noreferrer">Follow Me</a>
+                                        <a className="text-secondary-dark hover:text-primary-dark block px-3 py-2 rounded-md text-base font-medium" href="https://twitter.com/squintdev" target="_blank" rel="noreferrer">Follow Me</a>
                                     </div>
                                 </div>
                             )}
